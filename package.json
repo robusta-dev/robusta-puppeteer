@@ -1,0 +1,19 @@
+{
+  "name": "robusta-puppeteer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "grafana.js",
+  "dependencies": {
+    "puppeteer": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.9.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/grafana.js"
+  },
+  "author": ""
+}
