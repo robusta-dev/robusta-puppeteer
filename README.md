@@ -8,3 +8,6 @@ Unlike the grafana rendering plugin, this doesn't require configuring anything i
 3. Run: `npm run start`
 
 The result should now be saved as `example.png`
+
+# TODO
+* Containerization: see https://github.com/buildkite/docker-puppeteer
