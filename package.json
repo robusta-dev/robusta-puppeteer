@@ -4,6 +4,7 @@
   "description": "",
   "main": "grafana.js",
   "dependencies": {
+    "express": "^4.17.1",
     "puppeteer": "^10.1.0"
   },
   "devDependencies": {
@@ -13,7 +14,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/grafana.js"
+    "start": "tsc && node dist/grafana.js",
+    "serve": "node server.js"
   },
   "author": ""
 }

@@ -1,13 +1,20 @@
 # Introduction
-This is a proof of concept for rendering grafana panels to an image using a headless browser.
+This is a service for rendering grafana panels to an image using a headless browser.
 Unlike the grafana rendering plugin, this doesn't require configuring anything in grafana itself.
 
 # Instructions
-1. Set an apiKey in `grafana.ts` and update the url to a valid urlPanel
-2. Install dependencies: `npm install`
-3. Run: `npm run start`
+1. Install dependencies: `npm install`
+2. Run: `npm run start`
+3. Call the service rest API: 
 
-The result should now be saved as `example.png`
+POST
 
-# TODO
-* Containerization: see https://github.com/buildkite/docker-puppeteer
+http://127.0.0.1:8281/render
+
+post data:
+
+{
+    "apiKey": "SOME GRAFANA KEY",
+    "panelUrl": "SOME GRAFANA PANEL URL"
+}
+
