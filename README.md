@@ -18,3 +18,11 @@ post data:
     "panelUrl": "SOME GRAFANA PANEL URL"
 }
 
+# Creating a new version
+1. Build and tag the new image. Assuming the tag is NEW_TAG
+
+`docker build . -t us-central1-docker.pkg.dev/genuine-flight-317411/devel/grafana-renderer:NEW_TAG`
+2. Push the new image: 
+
+`docker push us-central1-docker.pkg.dev/genuine-flight-317411/devel/grafana-renderer:NEW_TAG`
+3. In the `robusta-runner`, update the renderer to the new image tag
