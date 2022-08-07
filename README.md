@@ -1,6 +1,8 @@
 # Introduction
-This is a service for rendering grafana panels to an image using a headless browser.
-Unlike the grafana rendering plugin, this doesn't require configuring anything in grafana itself.
+This is an optional component of the Robusta Helm chart that is used to render Grafana graphs to png.
+
+It works by rendering grafana panels to an image using a headless browser.
+Unlike Grafana's own builtin rendering plugin, this doesn't require configuring anything in Grafana itself.
 
 # Instructions
 1. Install dependencies: `npm install`
@@ -22,7 +24,9 @@ post data:
 1. Build and tag the new image. Assuming the tag is NEW_TAG
 
 `docker build . -t us-central1-docker.pkg.dev/genuine-flight-317411/devel/grafana-renderer:NEW_TAG`
+
 2. Push the new image: 
 
 `docker push us-central1-docker.pkg.dev/genuine-flight-317411/devel/grafana-renderer:NEW_TAG`
+
 3. In the `robusta-runner`, update the renderer to the new image tag
