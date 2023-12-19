@@ -5,7 +5,7 @@
   "main": "grafana.js",
   "dependencies": {
     "express": "^4.17.1",
-    "puppeteer": "^13.3.0"
+    "puppeteer": "^21.3.7"
   },
   "devDependencies": {
     "@types/node": "^16.3.2",
